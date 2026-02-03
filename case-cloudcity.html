@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudCity Project Snapshot | An&#273;ela &#262;asi&#263;</title>
+    <link rel="icon" type="image/svg+xml" href="Assets/ac-logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo" aria-label="Home">
+            <img src="Assets/ac-logo.svg" alt="AC logo" width="40" height="40">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work.html" class="nav-link active">Work</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <span class="nav-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><i class="ph ph-list"></i></span>
+    </nav>
+
+    <main>
+        <section class="case-hero">
+            <div class="case-hero-bg">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+            <div class="case-hero-content">
+                <p class="case-label">Project Snapshot</p>
+                <h1 class="case-title">CloudCity</h1>
+                <p class="case-subtitle">Emergency Response Admin Panel</p>
+                <p class="case-summary">A responsive operations dashboard with role-based access so teams can triage incidents, assign work orders, and track resolution status in real time.</p>
+                <div class="case-hero-actions">
+                    <a href="https://www.figma.com/design/rePC6fnEPbyvVd5vPI8trX/Cloud-City?node-id=0-1&t=0s7nfO0jzDiqtoI4-1" class="btn btn-primary" target="_blank" rel="noopener">View Figma File</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-info">
+            <div class="case-meta">
+                <ul class="case-meta-list">
+                    <li>
+                        <span class="case-meta-label">Role</span>
+                        <span class="case-meta-value">UI/UX Designer</span>
+                    </li>
+                    <li>
+                        <span class="case-meta-label">Timeline</span>
+                        <span class="case-meta-value">1 month</span>
+                    </li>
+                    <li>
+                        <span class="case-meta-label">Platform</span>
+                        <span class="case-meta-value">Web admin panel</span>
+                    </li>
+                    <li class="case-meta-wide">
+                        <span class="case-meta-label">Responsibilities</span>
+                        <span class="case-meta-value">UX research, user flows, wireframes, UI design, prototyping</span>
+                    </li>
+                    <li>
+                        <span class="case-meta-label">Tools</span>
+                        <span class="case-meta-value">Figma, Photoshop, InDesign</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <div class="section-header">
+                <span class="section-label">Overview</span>
+                <h2 class="section-title">Operational Control for City Incidents</h2>
+                <p class="section-desc">CloudCity is designed for response teams, not end users. It centralizes incident intake from the public app and gives admins a clear, auditable workflow to resolve issues quickly.</p>
+            </div>
+            <figure class="case-figure case-figure-narrow">
+                <div class="case-compare" data-compare style="--compare: 50;">
+                    <div class="case-compare-media">
+                        <img class="case-compare-img case-compare-img-base" src="Assets/CloudCity/overview%20light.png" alt="CloudCity overview in light theme">
+                        <img class="case-compare-img case-compare-img-top" src="Assets/CloudCity/overview%20dark.png" alt="CloudCity overview in dark theme">
+                        <div class="case-compare-handle" aria-hidden="true"></div>
+                        <div class="case-compare-label case-compare-label-left">Light</div>
+                        <div class="case-compare-label case-compare-label-right">Dark</div>
+                        <input class="case-compare-range" type="range" min="0" max="100" value="50" aria-label="Compare light and dark themes">
+                    </div>
+                </div>
+            </figure>
+            <div class="case-grid-two">
+                <div class="case-card">
+                    <h3>Challenge</h3>
+                    <p>Design a dashboard that supports three user roles with different permissions, while keeping incident triage, assignment, and resolution fast and consistent.</p>
+                </div>
+                <div class="case-card">
+                    <h3>Goals</h3>
+                    <ul class="case-list">
+                        <li>Real-time visibility into incoming incidents</li>
+                        <li>Clear status lifecycle (open, urgent, in progress, pending, resolved)</li>
+                        <li>Quick assignment and escalation workflows</li>
+                        <li>Audit-friendly logs and activity history</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <div class="section-header">
+                <span class="section-label">Process</span>
+                <h2 class="section-title">Admin-First Workflow Design</h2>
+            </div>
+            <div class="case-steps">
+                <div class="case-step">
+                    <span class="case-step-label">Discover</span>
+                    <h3>Operational Needs</h3>
+                    <p>Define what admins, supervisors, and operators need to see first to triage incidents fast.</p>
+                </div>
+                <div class="case-step">
+                    <span class="case-step-label">Define</span>
+                    <h3>Roles &amp; Permissions</h3>
+                    <p>Map access levels for device management, user control, assignments, and reporting.</p>
+                </div>
+                <div class="case-step">
+                    <span class="case-step-label">Design</span>
+                    <h3>Dashboard UI</h3>
+                    <p>Build modular tables, filters, and status badges for fast scanning and action.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <div class="section-header">
+                <span class="section-label">Design System</span>
+                <h2 class="section-title">UI Decisions</h2>
+                <p class="section-desc">A reusable component system ensured the UI stayed scalable as new features were added.</p>
+            </div>
+            <figure class="case-figure case-figure-narrow case-figure-crop-10">
+                <img src="Assets/CloudCity/stylesheet.gif" alt="CloudCity UI decision system overview" class="zoomable-image zoom-crop-10">
+            </figure>
+        </section>
+
+        <section class="case-section case-gallery" id="ui-screens">
+            <div class="section-header">
+                <span class="section-label">Final Designs</span>
+                <h2 class="section-title">Key Screens</h2>
+                <p class="section-desc">Key admin views: incident queue, status updates, assignment panels, device/user management, and analytics.</p>
+            </div>
+            <div class="case-gallery-scroll case-gallery-auto case-gallery-auto-tight" style="--gallery-duration: 55s;">
+                <div class="case-gallery-track case-gallery-track-auto">
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/1.%20cloud%20city.png" alt="CloudCity screen 1" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/2.%20cloud%20city.png" alt="CloudCity screen 2" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/3.%20cloud%20city.png" alt="CloudCity screen 3" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/4.%20cloud%20city.png" alt="CloudCity screen 4" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/5.%20cloud%20city.png" alt="CloudCity screen 5" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/6.%20cloud%20city.png" alt="CloudCity screen 6" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/7.%20cloud%20city.png" alt="CloudCity screen 7" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/8.%20cloud%20city.png" alt="CloudCity screen 8" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/9.%20cloud%20city.png" alt="CloudCity screen 9" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/10.%20cloud%20city.png" alt="CloudCity screen 10" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/1.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/2.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/3.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/4.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/5.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/6.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/7.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/8.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/9.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                    <div class="case-gallery-slide" aria-hidden="true">
+                        <div class="case-gallery-frame">
+                            <img src="Assets/CloudCity/10.%20cloud%20city.png" alt="" class="zoomable-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="case-section">
+            <div class="section-header">
+                <span class="section-label">Accessibility</span>
+                <h2 class="section-title">Accessibility &amp; Responsiveness</h2>
+            </div>
+            <div class="case-grid-two">
+                <div class="case-card">
+                    <h3>Accessibility considerations</h3>
+                    <ul class="case-list">
+                        <li>High-contrast status badges and readable table typography</li>
+                        <li>Consistent layout patterns for fast scanning</li>
+                        <li>Structured headings for clear navigation in dense views</li>
+                    </ul>
+                </div>
+                <div class="case-card">
+                    <h3>Responsiveness</h3>
+                    <ul class="case-list">
+                        <li>Responsive tables with stacked details on smaller screens</li>
+                        <li>Flexible grids and media that scale down without breaking layout</li>
+                    </ul>
+                </div>
+            </div>
+            <figure class="case-figure case-figure-narrow">
+                <img src="Assets/CloudCity/2.png" alt="CloudCity accessibility overview" class="zoomable-image">
+            </figure>
+        </section>
+
+        <section class="case-section">
+            <div class="section-header">
+                <span class="section-label">Outcome</span>
+                <h2 class="section-title">Results</h2>
+            </div>
+            <div class="case-grid-two">
+                <div class="case-card">
+                    <h3>What Improved</h3>
+                    <ul class="case-list">
+                        <li>Clear triage workflow across roles</li>
+                        <li>Faster assignment and status updates</li>
+                        <li>Better visibility into incident history and activity</li>
+                    </ul>
+                </div>
+                <div class="case-card">
+                    <h3>Next Steps</h3>
+                    <ul class="case-list">
+                        <li>Validate with admin teams across role types</li>
+                        <li>Refine escalation rules and SLA indicators</li>
+                        <li>Expand analytics for trends and response time</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Want more details?</h2>
+                <p>I can share the Figma file and walk you through the admin workflows.</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 An&#273;ela &#262;asi&#263;. Crafted with intention.</p>
+            <div class="footer-links">
+                <a href="Assets/An%C4%91ela%20%C4%86asi%C4%87%20-%20Resume.pdf" download="Andjela-Casic-Resume.pdf">Download CV</a>
+                <a href="https://www.behance.net/andjelacasic" target="_blank" rel="noopener">Behance</a>
+                <a href="https://www.linkedin.com/in/an%C4%91ela-%C4%87asi%C4%87-1a53b4196/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

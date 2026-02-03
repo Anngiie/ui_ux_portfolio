@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | An&#273;ela &#262;asi&#263;</title>
+    <link rel="icon" type="image/svg+xml" href="Assets/ac-logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo" aria-label="Home">
+            <img src="Assets/ac-logo.svg" alt="AC logo" width="40" height="40">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="work.html" class="nav-link">Work</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+        <span class="nav-toggle" role="button" tabindex="0" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu"><i class="ph ph-list"></i></span>
+    </nav>
+
+    <main>
+        <section class="page-hero contact-hero">
+            <div class="page-hero-bg">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+            </div>
+            <div class="page-hero-content">
+                <p class="page-label">Contact</p>
+                <h1 class="page-title">Let&#39;s Talk</h1>
+                <p class="page-desc">Have a project in mind? I&#39;d love to hear about it. Drop me a message and let&#39;s talk.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Let&#39;s Create Something Amazing</h2>
+                    <p class="contact-desc">Have a project in mind? I&#39;d love to hear about it. Drop me a message and let&#39;s talk.</p>
+                    <div class="contact-links">
+                        <a href="Assets/An%C4%91ela%20%C4%86asi%C4%87%20-%20Resume.pdf" class="contact-link" download="Andjela-Casic-Resume.pdf">
+                            <i class="ph ph-download-simple"></i>
+                            <span>Download CV</span>
+                        </a>
+                        <a href="mailto:andjela.casic@gmail.com" class="contact-link">
+                            <i class="ph ph-envelope"></i>
+                            <span>andjela.casic@gmail.com</span>
+                        </a>
+                        <a href="tel:+381631018165" class="contact-link">
+                            <i class="ph ph-phone"></i>
+                            <span>+381 63 101 8165</span>
+                        </a>
+                        <a href="https://www.behance.net/andjelacasic" class="contact-link" target="_blank" rel="noopener">
+                            <i class="ph ph-behance-logo"></i>
+                            <span>Behance Portfolio</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/an%C4%91ela-%C4%87asi%C4%87-1a53b4196/" class="contact-link" target="_blank" rel="noopener">
+                            <i class="ph ph-linkedin-logo"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="ui-ux">UI/UX Design</option>
+                            <option value="branding">Branding</option>
+                            <option value="webflow">Webflow Project</option>
+                            <option value="consulting">Design Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Send Message</span>
+                        <i class="ph ph-paper-plane-right"></i>
+                    </button>
+                    <p class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 An&#273;ela &#262;asi&#263;. Crafted with intention.</p>
+            <div class="footer-links">
+                <a href="Assets/An%C4%91ela%20%C4%86asi%C4%87%20-%20Resume.pdf" download="Andjela-Casic-Resume.pdf">Download CV</a>
+                <a href="https://www.behance.net/andjelacasic" target="_blank" rel="noopener">Behance</a>
+                <a href="https://www.linkedin.com/in/an%C4%91ela-%C4%87asi%C4%87-1a53b4196/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        gsap.from('.page-hero-content', {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            delay: 0.2,
+            ease: 'power3.out'
+        });
+    </script>
+    <style>
+        .page-hero {
+            min-height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 8rem 2rem 4rem;
+            overflow: hidden;
+        }
+
+        .page-hero-bg {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+        }
+
+        .page-hero-bg .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+        }
+
+        .page-hero-bg .orb-1 {
+            width: 500px;
+            height: 500px;
+            background: var(--accent-primary);
+            top: -20%;
+            right: -10%;
+        }
+
+        .page-hero-bg .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: #ec4899;
+            bottom: -10%;
+            left: -10%;
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .page-label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--accent-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 1rem;
+        }
+
+        .page-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .page-desc {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+    </style>
+</body>
+</html>
+
+
